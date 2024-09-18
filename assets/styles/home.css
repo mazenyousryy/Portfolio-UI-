@@ -1,0 +1,160 @@
+/* General Styles */
+
+/* General Styles */
+:root {
+    --primary-color: #ff6464;
+    --secondary-color: #00a8cc;
+    --light-color: #8695a4;
+}
+
+h1 {
+    font-size: 2.75rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.375rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+#profile-section,
+#posts,
+#recent-header,
+#works,
+.work {
+    display: flex;
+}
+
+/* Base Styles */
+
+/* Profile */
+
+#profile-section {
+    flex-direction: row-reverse;
+    gap: 3rem;
+    margin-bottom: 1.875rem;
+}
+
+.primary-btn {
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.primary-btn:hover {
+    background-color: #ff6b7a;
+}
+
+/* Recent Posts */
+#recent-posts {
+    background-color: #edf7fa;
+}
+
+#posts,
+#recent-header {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#recent-header a {
+    color: var(--secondary-color);
+}
+
+#posts {
+    gap: 2rem;
+}
+
+.post {
+    flex: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Featured Works */
+
+#featured-works {
+    padding-block: 1.25rem;
+}
+
+#works {
+    flex-direction: column;
+    gap: 2rem;
+    padding-block: 1.25rem;
+}
+
+.work {
+    background-color: white;
+    gap: 1rem;
+    border-radius: 8px;
+    border-bottom: 1px solid var(--light-color);
+    margin-block: 35px;
+}
+
+.types-text {
+    color: var(--light-color);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    /* General Styles */
+    h2 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+
+    h3 {
+        font-size: 1.375rem;
+    }
+
+    .container {
+        padding: 1.25rem;
+    }
+
+    #posts,
+    #works,
+    .work {
+        flex-direction: column;
+    }
+
+    /* Base Styles */
+    #profile-section {
+        display: block;
+        text-align: center;
+    }
+
+    #profile-section h1 {
+        font-size: 2rem;
+    }
+
+    .recent-posts {
+        padding: 1rem;
+    }
+
+    #recent-posts h2,
+    #works h2 {
+        text-align: center;
+    }
+
+    #recent-header {
+        display: block;
+    }
+
+    #recent-header a {
+        display: none;
+    }
+
+    .work-img img {
+        width: 100%;
+    }
+}

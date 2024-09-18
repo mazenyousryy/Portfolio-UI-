@@ -1,0 +1,48 @@
+/* General Styles */
+:root {
+    --primary-color: #ff6464;
+    --dark-color: #21243d;
+}
+
+/* Base Styles */
+
+.year-text {
+    background-color: var(--primary-color);
+}
+
+#section-one h1 {
+    font-size: 2.125rem;
+}
+
+#section-two h1 {
+    font-size: 1.875rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#section-two h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+img {
+    margin-block: 15px;
+}
+
+@media (max-width: 768px) {
+    #section-one h1 {
+        font-size: 1.875rem;
+    }
+
+    #section-two h1 {
+        font-size: 1.625rem;
+    }
+
+    #section-two h2 {
+        font-size: 1.25rem;
+    }
+
+    .types-text {
+        font-size: 1.125rem;
+    }
+}
